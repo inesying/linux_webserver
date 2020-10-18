@@ -1,7 +1,7 @@
 
 HTTP
 
-##关于HTTP请求GET和POST的区别
+###关于HTTP请求GET和POST的区别
 
 1.GET提交，请求的数据会附在URL之后（就是把数据放置在HTTP协议头＜request-line＞中），以?分割URL和传输数据，多个参数用&连接;例如：login.action name=hyddd&password=idontknow&verify=%E4%BD%A0 %E5%A5%BD。如果数据是英文字母/数字，原样发送，如果是空格，转换为+，如果是中文/其他字符，则直接把字符串用BASE64加密，得出如： %E4%BD%A0%E5%A5%BD，其中％XX中的XX为该符号以16进制表示的ASCII。
 
@@ -12,7 +12,7 @@ HTTP
 
 POST请求，将参数放到body里面。POST请求操作相对复杂，需要将参数和地址分开，不过安全性高，参数放在body里面，不易被捕获。
 
-##POST方法有两种格式
+#POST方法有两种格式
 
 一种是基本的格式，一般用于发送文字信息。
 
