@@ -1,5 +1,6 @@
 ##虚拟机操作流程
 root@youyou-virtual-machine:~# git clone https://github.com/inesying/linux_webserver.git
+
 Cloning into 'linux_webserver'...
 remote: Enumerating objects: 7, done.
 remote: Counting objects: 100% (7/7), done.
@@ -7,12 +8,18 @@ remote: Compressing objects: 100% (7/7), done.
 remote: Total 101 (delta 1), reused 0 (delta 0), pack-reused 94
 Receiving objects: 100% (101/101), 4.59 MiB | 60.00 KiB/s, done.
 Resolving deltas: 100% (13/13), done.
+
 root@youyou-virtual-machine:~# ls
 linux_webserver
+
 root@youyou-virtual-machine:~# cd linux_webserver/
+
 root@youyou-virtual-machine:~/linux_webserver# mkdir bin
+
 root@youyou-virtual-machine:~/linux_webserver# service mysql start
+
 root@youyou-virtual-machine:~/linux_webserver# mysql -uroot -p123456
+
 mysql: [Warning] Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 182
@@ -31,6 +38,7 @@ Query OK, 1 row affected (0.01 sec)
 
 mysql> use mydb;
 Database changed
+
 mysql> create table usr(
     -> username char(50) null,
     -> password char(50) null)engine=InnoDB;
@@ -41,6 +49,7 @@ Query OK, 1 row affected (0.00 sec)
 
 mysql> quit;
 Bye
+
 root@youyou-virtual-machine:~/linux_webserver# make
 g++ -std=c++14 -O2 -Wall -g  ./log/*.cpp ./pool/*.cpp ./timer/*.cpp ./http/*.cpp ./server/*.cpp ./buffer/*.cpp ./main.cpp -o ./bin/server  -pthread -lmysqlclient
 ./http/httprequest.cpp: In static member function ‘static bool HttpRequest::UserVerify(const string&, const string&, bool)’:
@@ -50,6 +59,7 @@ g++ -std=c++14 -O2 -Wall -g  ./log/*.cpp ./pool/*.cpp ./timer/*.cpp ./http/*.cpp
 ./http/httprequest.cpp:187:18: warning: variable ‘fields’ set but not used [-Wunused-but-set-variable]
   187 |     MYSQL_FIELD *fields = nullptr;
       |                  ^~~~~~
+      
 root@youyou-virtual-machine:~/linux_webserver# ifconfig
 docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
