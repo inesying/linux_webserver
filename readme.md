@@ -1,5 +1,7 @@
 #后续有docker版本，敬请关注
 
+#此处安利Jupyter Notebook，超级好用，我经常用它来爬虫
+
 # 环境要求
 
 linux
