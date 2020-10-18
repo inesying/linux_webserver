@@ -80,4 +80,8 @@ root@youyou-virtual-machine:~/linux_webserver# ifconfig
 
 root@youyou-virtual-machine:~/linux_webserver# ./bin/server
 
+![image](https://github.com/inesying/linux_webserver/blob/main/resources/images/index.jpg)
+
+![image](https://github.com/inesying/linux_webserver/blob/main/resources/images/video.jpg)
+
 
