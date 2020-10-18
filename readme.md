@@ -100,3 +100,6 @@ root@youyou-virtual-machine:~/linux_webserver# ./bin/server
 ![image](https://github.com/inesying/linux_webserver/blob/main/resources/images/video.jpg)
 
 
+# 感谢 陈硕大佬的muduo C++ 服务端编程
+
+# 感谢 游双的Linux高性能服务器编程
