@@ -8,6 +8,11 @@ mysql
 
 C++
 
+# 项目内容
+
+buffer,log,threadpool,http等，相关解释请查看该目录下readme.md
+
+
 # 虚拟机操作流程
 
 clone项目到虚拟机
