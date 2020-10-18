@@ -4,7 +4,7 @@ ChannelBuffer的模型图如下：
  
  | PrependableBytes  |  ReadableBytes   |   WritableBytes  |
  
- |                   |     (CONTENT)    |                  |
+ |                    |     (CONTENT)    |                  |
  
  +-------------------+------------------+------------------+
  
